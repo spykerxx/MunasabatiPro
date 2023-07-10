@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Munasabati</string>
+    -
+    <string name="show_all_customers">Show All customers</string>
+    <string name="view_available_room">View Available room</string>
+    <string name="google_maps_key">AIzaSyBh--rFPgR5lD7_TRKKPniexU2Mb8MNGdI</string>
+
+    <string-array name="options">
+        <item>Options:</item>
+        <item>Add Service</item>
+        <item>Edit Event</item>
+        <item>Delete Event</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>Client</item>
+        <item>Admin</item>
+        <item>Service Provider</item>
+        <item>Qr Scanner </item>
+    </string-array>
+
+    <string name="title_activity_map_services">MapServicesActivity</string>
+</resources>

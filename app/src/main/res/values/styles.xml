@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/design_default_color_on_primary</item>
+        <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
+        <item name="colorAccent">@color/design_default_color_on_secondary</item>
+
+    </style>
+    <style name="Style1">
+
+        <item name="android:textSize">20dp</item>
+        <item name="textFillColor">#111</item>
+
+        <item name="fontFamily">sans-serif-black</item>
+    </style>
+
+    <style name="SpinnerTheme">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,364 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.munasabati"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml
+10    <!--
+11         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+12         Google Maps Android API v2, but you must specify either coarse or fine
+13         location permissions for the "MyLocation" functionality.
+14    -->
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:9:5-81
+15-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:10:5-67
+16-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:10:22-64
+17    <uses-permission android:name="android.permission.WAKE_LOCK" />
+17-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:11:5-68
+17-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:11:22-65
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:9:5-81
+18-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:9:22-78
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+19-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:13:5-79
+19-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:13:22-76
+20
+21    <permission
+21-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:15:5-17:47
+22        android:name="com.pkg.map.permission.MAPS_RECEIVE"
+22-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:16:9-59
+23        android:protectionLevel="signature" />
+23-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:17:9-44
+24
+25    <!-- Include required permissions for Google Maps API to run. -->
+26    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+26-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Spyker\.gradle\caches\transforms-3\58714289bf2a2c64f1cffb3dc7303cc6\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:23:5-79
+26-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Spyker\.gradle\caches\transforms-3\58714289bf2a2c64f1cffb3dc7303cc6\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:23:22-76
+27
+28    <uses-feature
+28-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Spyker\.gradle\caches\transforms-3\58714289bf2a2c64f1cffb3dc7303cc6\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:26:5-28:35
+29        android:glEsVersion="0x00020000"
+29-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Spyker\.gradle\caches\transforms-3\58714289bf2a2c64f1cffb3dc7303cc6\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:27:9-41
+30        android:required="true" />
+30-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Spyker\.gradle\caches\transforms-3\58714289bf2a2c64f1cffb3dc7303cc6\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:28:9-32
+31
+32    <queries>
+32-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Spyker\.gradle\caches\transforms-3\58714289bf2a2c64f1cffb3dc7303cc6\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:30:5-34:15
+33
+34        <!-- Needs to be explicitly declared on Android R+ -->
+35        <package android:name="com.google.android.apps.maps" />
+35-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Spyker\.gradle\caches\transforms-3\58714289bf2a2c64f1cffb3dc7303cc6\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:33:9-64
+35-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Spyker\.gradle\caches\transforms-3\58714289bf2a2c64f1cffb3dc7303cc6\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:33:18-61
+36    </queries>
+37
+38    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+38-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:21:5-65
+38-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:21:22-62
+39    <uses-feature
+39-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:24:5-26:36
+40        android:name="android.hardware.camera"
+40-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:25:9-47
+41        android:required="false" />
+41-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:26:9-33
+42    <uses-feature
+42-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:27:5-29:36
+43        android:name="android.hardware.camera.front"
+43-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:28:9-53
+44        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+44-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:29:9-33
+45    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+46    <uses-feature
+46-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:32:5-34:36
+47        android:name="android.hardware.camera.autofocus"
+47-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:33:9-57
+48        android:required="false" />
+48-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:34:9-33
+49    <uses-feature
+49-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:35:5-37:36
+50        android:name="android.hardware.camera.flash"
+50-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:36:9-53
+51        android:required="false" />
+51-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:37:9-33
+52    <uses-feature
+52-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:38:5-40:36
+53        android:name="android.hardware.screen.landscape"
+53-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:39:9-57
+54        android:required="false" />
+54-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:40:9-33
+55    <uses-feature
+55-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:41:5-43:36
+56        android:name="android.hardware.wifi"
+56-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:42:9-45
+57        android:required="false" />
+57-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:43:9-33
+58
+59    <application
+59-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:19:5-138:19
+60        android:allowBackup="true"
+60-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:20:9-35
+61        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+61-->[androidx.core:core:1.7.0-beta01] C:\Users\Spyker\.gradle\caches\transforms-3\0ec983167686315a05c9792040795e9f\transformed\core-1.7.0-beta01\AndroidManifest.xml:24:18-86
+62        android:debuggable="true"
+63        android:icon="@mipmap/ic_launcher"
+63-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:21:9-43
+64        android:label="@string/app_name"
+64-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:22:9-41
+65        android:roundIcon="@mipmap/ic_launcher_round"
+65-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:23:9-54
+66        android:supportsRtl="true"
+66-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:24:9-35
+67        android:testOnly="true"
+68        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+68-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:25:9-65
+69        android:usesCleartextTraffic="true" >
+69-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:26:9-44
+70        <activity
+70-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:27:9-29:39
+71            android:name="com.example.Munasabati.QRScannerActivity"
+71-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:28:13-68
+72            android:exported="true" />
+72-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:29:13-36
+73        <activity
+73-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:30:9-32:39
+74            android:name="com.example.Munasabati.ForgotPassActivity"
+74-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:31:13-69
+75            android:exported="true" />
+75-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:32:13-36
+76        <activity
+76-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:33:9-35:39
+77            android:name="com.example.Munasabati.CalendarActivity"
+77-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:34:13-67
+78            android:exported="true" />
+78-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:35:13-36
+79        <activity
+79-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:36:9-38:39
+80            android:name="com.example.Munasabati.AdminRequestsActivity"
+80-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:37:13-72
+81            android:exported="true" />
+81-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:38:13-36
+82        <activity
+82-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:39:9-42:55
+83            android:name="com.example.Munasabati.newEventActivity"
+83-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:40:13-67
+84            android:exported="true"
+84-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:41:13-36
+85            android:windowSoftInputMode="adjustPan" />
+85-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:42:13-52
+86        <activity
+86-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:43:9-46:54
+87            android:name="com.example.Munasabati.HomeAdminActivity"
+87-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:44:13-68
+88            android:exported="true"
+88-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:45:13-36
+89            android:windowSoftInputMode="adjustPan" />
+89-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:46:13-52
+90        <activity
+90-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:47:9-49:39
+91            android:name="com.example.Munasabati.InvitationsActivity"
+91-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:48:13-70
+92            android:exported="true" />
+92-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:49:13-36
+93        <activity
+93-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:50:9-52:39
+94            android:name="com.example.Munasabati.NotificationsActivity"
+94-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:51:13-72
+95            android:exported="true" />
+95-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:52:13-36
+96
+97        <meta-data
+97-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:54:9-56:69
+98            android:name="com.google.android.gms.version"
+98-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:55:13-58
+99            android:value="@integer/google_play_services_version" />
+99-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:56:13-66
+100        <!--
+101             The API key for Google Maps-based APIs is defined as a string resource.
+102             (See the file "res/values/google_maps_api.xml").
+103             Note that the API key is linked to the encryption key used to sign the APK.
+104             You need a different API key for each encryption key, including the release key that is used to
+105             sign the APK for publishing.
+106             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+107        -->
+108        <meta-data
+108-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:65:9-67:55
+109            android:name="com.google.android.geo.API_KEY"
+109-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:66:13-58
+110            android:value="@string/google_maps_key" />
+110-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:67:13-52
+111
+112        <activity
+112-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:69:9-72:67
+113            android:name="com.example.Munasabati.MapServicesActivity"
+113-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:70:13-70
+114            android:exported="true"
+114-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:71:13-36
+115            android:label="@string/title_activity_map_services" />
+115-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:72:13-64
+116        <activity
+116-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:73:9-75:39
+117            android:name="com.example.Munasabati.ServiceActivity"
+117-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:74:13-66
+118            android:exported="true" />
+118-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:75:13-36
+119        <activity
+119-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:76:9-84:20
+120            android:name="com.example.Munasabati.IntroActivity"
+120-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:77:13-64
+121            android:exported="true" >
+121-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:78:13-36
+122            <intent-filter>
+122-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:79:13-83:29
+123                <action android:name="android.intent.action.MAIN" />
+123-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:80:17-69
+123-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:80:25-66
+124
+125                <category android:name="android.intent.category.LAUNCHER" />
+125-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:82:17-77
+125-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:82:27-74
+126            </intent-filter>
+127        </activity>
+128        <activity
+128-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:85:9-87:39
+129            android:name="com.example.Munasabati.InvitationActivity"
+129-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:86:13-69
+130            android:exported="true" />
+130-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:87:13-36
+131        <activity
+131-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:88:9-90:39
+132            android:name="com.example.Munasabati.RequestsActivity"
+132-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:89:13-67
+133            android:exported="true" />
+133-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:90:13-36
+134        <activity
+134-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:91:9-94:54
+135            android:name="com.example.Munasabati.ServicesActivity"
+135-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:92:13-67
+136            android:exported="true"
+136-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:93:13-36
+137            android:windowSoftInputMode="adjustPan" />
+137-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:94:13-52
+138        <activity
+138-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:95:9-98:54
+139            android:name="com.example.Munasabati.ServiceProviderActivity"
+139-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:96:13-74
+140            android:exported="true"
+140-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:97:13-36
+141            android:windowSoftInputMode="adjustPan" />
+141-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:98:13-52
+142        <activity
+142-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:99:9-101:40
+143            android:name="com.example.Munasabati.AdminProfileActivity"
+143-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:100:13-71
+144            android:exported="false" />
+144-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:101:13-37
+145        <activity
+145-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:102:9-104:39
+146            android:name="com.example.Munasabati.PaymentActivity"
+146-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:103:13-66
+147            android:exported="true" />
+147-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:104:13-36
+148        <activity
+148-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:105:9-107:39
+149            android:name="com.example.Munasabati.CurrentOrderActivity"
+149-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:106:13-49
+150            android:exported="true" />
+150-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:107:13-36
+151        <activity
+151-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:108:9-110:39
+152            android:name="com.example.Munasabati.CheckInResultActivity"
+152-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:109:13-72
+153            android:exported="true" />
+153-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:110:13-36
+154        <activity
+154-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:111:9-114:55
+155            android:name="com.example.Munasabati.newServiceActivity"
+155-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:112:13-69
+156            android:exported="true"
+156-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:113:13-36
+157            android:windowSoftInputMode="adjustPan" />
+157-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:114:13-52
+158        <activity
+158-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:115:9-117:39
+159            android:name="com.example.Munasabati.EventActivity"
+159-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:116:13-64
+160            android:exported="true" />
+160-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:117:13-36
+161        <activity
+161-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:118:9-121:55
+162            android:name="com.example.Munasabati.HomeActivity"
+162-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:119:13-63
+163            android:exported="true"
+163-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:120:13-36
+164            android:windowSoftInputMode="adjustPan" />
+164-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:121:13-52
+165        <activity
+165-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:122:9-124:39
+166            android:name="com.example.Munasabati.LoginActivity"
+166-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:123:13-64
+167            android:exported="true" />
+167-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:124:13-36
+168        <activity
+168-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:125:9-128:54
+169            android:name="com.example.Munasabati.SignupActivity"
+169-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:126:13-65
+170            android:exported="true"
+170-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:127:13-36
+171            android:windowSoftInputMode="adjustPan" />
+171-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:128:13-52
+172        <activity
+172-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:129:9-137:20
+173            android:name="com.example.Munasabati.MainActivity"
+173-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:130:13-63
+174            android:exported="true" >
+174-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:131:13-36
+175            <intent-filter>
+175-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:79:13-83:29
+176                <action android:name="android.intent.action.MAIN" />
+176-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:80:17-69
+176-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:80:25-66
+177
+178                <category android:name="android.intent.category.LAUNCHER" />
+178-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:82:17-77
+178-->C:\Users\Spyker\Downloads\p425 (1)\Munasabati\app\src\main\AndroidManifest.xml:82:27-74
+179            </intent-filter>
+180        </activity>
+181        <!-- Needs to be explicitly declared on P+ -->
+182        <uses-library
+182-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Spyker\.gradle\caches\transforms-3\58714289bf2a2c64f1cffb3dc7303cc6\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:39:9-41:40
+183            android:name="org.apache.http.legacy"
+183-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Spyker\.gradle\caches\transforms-3\58714289bf2a2c64f1cffb3dc7303cc6\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:40:13-50
+184            android:required="false" />
+184-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Spyker\.gradle\caches\transforms-3\58714289bf2a2c64f1cffb3dc7303cc6\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:41:13-37
+185
+186        <activity
+186-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:46:9-52:63
+187            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+187-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:47:13-74
+188            android:clearTaskOnLaunch="true"
+188-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:48:13-45
+189            android:screenOrientation="sensorLandscape"
+189-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:49:13-56
+190            android:stateNotNeeded="true"
+190-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:50:13-42
+191            android:theme="@style/zxing_CaptureTheme"
+191-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:51:13-54
+192            android:windowSoftInputMode="stateAlwaysHidden" />
+192-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Spyker\.gradle\caches\transforms-3\a03de4cee02372d45b4b483b3138e5f1\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:52:13-60
+193        <activity
+193-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Spyker\.gradle\caches\transforms-3\e83c4bdaa63676cd01a8054eca5e272c\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+194            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+194-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Spyker\.gradle\caches\transforms-3\e83c4bdaa63676cd01a8054eca5e272c\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+195            android:exported="false"
+195-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Spyker\.gradle\caches\transforms-3\e83c4bdaa63676cd01a8054eca5e272c\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+196            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+196-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Spyker\.gradle\caches\transforms-3\e83c4bdaa63676cd01a8054eca5e272c\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+197    </application>
+198
+199</manifest>
